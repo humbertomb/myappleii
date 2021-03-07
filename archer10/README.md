@@ -1,7 +1,10 @@
 Some weeks ago I had notice of a retro programming contest, yes through one of these wasap groups, the 10th Edition of BASIC 10 Liner Contest. The main idea is that you develop a game in BASIC with no more than 10 lines of code for 8 bit legacy computers. There are different categories depending on the maximum number of characters per line allowed. Simple, isn't it? I decided to go for a try, and made a MSX-1 program which I submitted to the contest. You can find a detailed description of the program in Archer 10 (MSX). Submission to the 2021 10-Liner Contest. After I finished, I asked myself: why not an Apple II port? Although I developed some programs in the 80s for Apple II, those were mostly CP/M with the Microsoft BASIC. You can find an example in Recuperación de código MBASIC para Apple II desde listados (it is in Spanish, but you can get the idea from the many pictures. Google translate might also be of some help). Anyway, it is never late for learning. And I had the appropriate material for getting into the job:
 
-D. Finningan (2012) The New Apple II User's Guide. Mac GUI, Lincoln, IL (book)
-M.L. Callerey, R. Schwarz (1984) Apple Graphics Tools and Techniques. Prentice-Hall (PDF)
+<UL>
+  <LI>D. Finningan (2012) <B>The New Apple II User's Guide</B>. Mac GUI, Lincoln, IL (book)</LI>
+  <LI>M.L. Callerey, R. Schwarz (1984) <B>Apple Graphics Tools and Techniques</B>. Prentice-Hall (PDF)</LI>
+</UL>
+  
 I decided to mimic as much as possible the MSX-1 program mentioned above and develop an AppleSoft BASIC one. I had a gameplay and a sample 10-liner source code. That should be more than enough. I wanted to keep high resolution graphics, colors and sounds, even if those for the MSX were a little bit weird (disclaimer: I am very bad at gaming, coloring and music. The perfect combination :-).
 
 <B>The programming</B>
@@ -22,28 +25,30 @@ Lines 4 to 8 implement the gameplay. They manage arrow and target movement, user
 Lines 8 to 9 contain DATA definitions for the graphic shapes coded in decimal. These statements are put at the end of actual code, so we can make benefit of characters available in those lines. I tried to get rid of any character which is not ASCII standard. As I develop both on my Mac and on my Apple IIe, doing otherwise would produce me many headaches trying to preserve character coding.
 
 The state of the game is coded using the following variables:
-Y (Float): vertical position of the target in pixels. Varies in the 34 .. 125 range
-S (Float): amount in pixels which is added/substracted to Y at each time step. It controls the velocity of the target. Its initial value is 1.0. Each time a hit occurs it is increased by 0.25 
-X (Integer): horizontal position of the arrow in pixels. Varies in the 200 .. 32 range
-D (Integer): linear distance between the arrow y position and the target y position
-G (Integer): total score achieved
-F (Integer): number of fails
-H (Integer): score of the last hit, derived from D
-B (Integer): state variable representing whether the arrow is moving (B=1) or not (B=0)
-Q (Integer): state variable representing whether the game is active (Q=0) or not (Q=1)
-I finally had a code of 1.7 Kb, in 10 lines of BASIC, with standard ASCII character coding. Nice. Goal achieved. You can find the code, a simulator disk file (DSK) and some multimedia materials here:
+<UL>
+<LI><B>Y</B>Y (Float): vertical position of the target in pixels. Varies in the 34 .. 125 range</LI>
+<LI><B>S</B> (Float): amount in pixels which is added/substracted to Y at each time step. It controls the velocity of the target. Its initial value is 1.0. Each time a hit occurs it is increased by 0.25 </LI>
+<LI><B>X</B> (Integer): horizontal position of the arrow in pixels. Varies in the 200 .. 32 range</LI>
+<LI><B>D</B> (Integer): linear distance between the arrow y position and the target y position</LI>
+<LI><B>G</B> (Integer): total score achieved</LI>
+<LI><B>F</B> (Integer): number of fails</LI>
+<LI><B>H</B> (Integer): score of the last hit, derived from D</LI>
+<LI><B>B</B> (Integer): state variable representing whether the arrow is moving (B=1) or not (B=0)</LI>
+<LI><B>Q</B> (Integer): state variable representing whether the game is active (Q=0) or not (Q=1)</LI>
+</UL>  
+Ifinally had a code of 1.7 Kb, in 10 lines of BASIC, with standard ASCII character coding. Nice. Goal achieved. You can find the code, a simulator disk file (DSK) and some multimedia materials here:
 
 GitHub: https://github.com/humbertomb/myappleii/tree/main/archer10
 
 <B>Instructions</B>
 
-You are a top-notch archer in the "Outdoor Archery World Series. Moving Target". You throw an arrow by pressing the space bar, and cannot throw a new one until it either makes a hit or a fail. The target moves so you have to carefully synchronize the arrow throwing with the target movement. The target speed gets increasing with each hit. You get points for each hit depending of how close the arrow gets to the target center. You are allowed a maximum of 3 failures, in which case the competition finishes and you get your final score. To start a new game press the space bar.
+You are a top-notch archer in the "<I>Outdoor Archery World Series. Moving Target</I>". You throw an arrow by pressing the space bar, and cannot throw a new one until it either makes a hit or a fail. The target moves so you have to carefully synchronize the arrow throwing with the target movement. The target speed gets increasing with each hit. You get points for each hit depending of how close the arrow gets to the target center. You are allowed a maximum of 3 failures, in which case the competition finishes and you get your final score. To start a new game press the space bar.
 
 Are you ready? Can you make more than one hundred points? Let's try it.
 
-Download the file archer10.dsk from GitHub and drag&drop it on the Drive 1 icon on the Virtual II emulator (a fantastic application by Gerard Putter, which is worth the price of the paid version). Once the disk is loaded, type the following command in the console and then press INTRO:
+Download the file archer10.dsk from GitHub and drag&drop it on the <i>Drive 1</I> icon on the <A HREF="https://www.virtualii.com">Virtual II</A> emulator (a fantastic application by Gerard Putter, which is worth the price of the paid version). Once the disk is loaded, type the following command in the console and then press INTRO:
 
-RUN ARCHER10.BAS
+<TT>RUN ARCHER10.BAS</TT>
 
 The game has sound, so remember to enable audio in your computer.
 
