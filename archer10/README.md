@@ -37,12 +37,12 @@ The state of the game is coded using the following variables:
 <LI><B>B</B> (Integer): state variable representing whether the arrow is moving (B=1) or not (B=0)</LI>
 <LI><B>Q</B> (Integer): state variable representing whether the game is active (Q=0) or not (Q=1)</LI>
 </UL>  
-Ifinally had a code of 1.7 Kb, in 10 lines of BASIC, with standard ASCII character coding. Nice. Goal achieved. 
+I finally had a code of 1.7 Kb, in 10 lines of BASIC, with standard ASCII character coding. Nice. Goal achieved. 
 
 <B>Instructions</B>
 
 You are a top-notch archer in the "<I>Outdoor Archery World Series. Moving Target</I>". You throw an arrow by pressing the space bar, and cannot throw a new one until it either makes a hit or a fail. The target moves so you have to carefully synchronize the arrow throwing with the target movement. The target speed gets increasing with each hit. You get points for each hit depending of how close the arrow gets to the target center. You are allowed a maximum of 3 failures, in which case the competition finishes and you get your final score. To start a new game press the space bar.
-
+ 
 Are you ready? Can you make more than one hundred points? Let's try it.
 
 Download the file archer10.dsk from GitHub and drag&drop it on the <i>Drive 1</I> icon on the <A HREF="https://www.virtualii.com">Virtual II</A> emulator (a fantastic application by Gerard Putter, which is worth the price of the paid version). Once the disk is loaded, type the following command in the console and then press INTRO:
