@@ -5,7 +5,7 @@ This repository is intended to be a compilation of some of the software I have d
 
 I have packed the code in several forlders, one for each interesting program. The files are stored in different formats:
 
-'.BAS' ASCII encoded Microsoft BASIC source file
+'.BAS' ASCII encoded Microsoft or AppleSOft BASIC source file
 
 '.DSK' Diskette emulation format, for use in Virtual II and BMOW Floppy Emulator
 
