@@ -1,4 +1,5 @@
-<H1>ARCHER10</H1>
+<B>ARCHER10</B>
+
 Some weeks ago I had notice of a retro programming contest, yes through one of these wasap groups, the <A HREF="https://gkanold.wixsite.com/homeputerium/rules2021">10th Edition of BASIC 10 Liner Contest</A>. The main idea is that you develop a game in BASIC with no more than 10 lines of code for 8 bit legacy computers. There are different categories depending on the maximum number of characters per line allowed. Simple, isn't it? I decided to go for a try, and made a MSX-1 program which I submitted to the contest. You can find a detailed description of the program in <A HREF="https://humbertomb.blogspot.com/2021/02/archer10-submission-to-2021-10-liner.html">Archer 10 (MSX). Submission to the 2021 10-Liner Contest</A>. After I finished, I asked myself: why not an Apple II port? Although I developed some programs in the 80s for Apple II, those were mostly CP/M with the Microsoft BASIC. You can find an example in <A HREF="https://humbertomb.blogspot.com/2020/10/recuperacion-de-codigo-mbasic-para.html">Recuperación de código MBASIC para Apple II desde listados</A> (it is in Spanish, but you can get the idea from the many pictures. Google translate might also be of some help). Anyway, it is never late for learning. And I had the appropriate material for getting into the job:
 
 <UL>
@@ -46,7 +47,7 @@ You are a top-notch archer in the "<I>Outdoor Archery World Series. Moving Targe
  
 Are you ready? Can you make more than one hundred points? Let's try it.
 
-Download the file archer10.dsk from GitHub and drag&drop it on the <i>Drive 1</I> icon on the <A HREF="https://www.virtualii.com">Virtual II</A> emulator (a fantastic application by Gerard Putter, which is worth the price of the paid version). Once the disk is loaded, type the following command in the console and then press INTRO:
+Download the file <I>archer10.dsk</I> from GitHub and drag&drop it on the <i>Drive 1</I> icon on the <A HREF="https://www.virtualii.com">Virtual II</A> emulator (a fantastic application by Gerard Putter, which is worth the price of the paid version). Once the disk is loaded, type the following command in the console and then press INTRO:
 
 <TT>RUN ARCHER10.BAS</TT>
 
