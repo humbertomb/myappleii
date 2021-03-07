@@ -1,4 +1,4 @@
-Some weeks ago I had notice of a retro programming contest, yes through one of these wasap groups, the 10th Edition of BASIC 10 Liner Contest. The main idea is that you develop a game in BASIC with no more than 10 lines of code for 8 bit legacy computers. There are different categories depending on the maximum number of characters per line allowed. Simple, isn't it? I decided to go for a try, and made a MSX-1 program which I submitted to the contest. You can find a detailed description of the program in Archer 10 (MSX). Submission to the 2021 10-Liner Contest. After I finished, I asked myself: why not an Apple II port? Although I developed some programs in the 80s for Apple II, those were mostly CP/M with the Microsoft BASIC. You can find an example in Recuperación de código MBASIC para Apple II desde listados (it is in Spanish, but you can get the idea from the many pictures. Google translate might also be of some help). Anyway, it is never late for learning. And I had the appropriate material for getting into the job:
+Some weeks ago I had notice of a retro programming contest, yes through one of these wasap groups, the <A HREF="https://gkanold.wixsite.com/homeputerium/rules2021">10th Edition of BASIC 10 Liner Contest</A>. The main idea is that you develop a game in BASIC with no more than 10 lines of code for 8 bit legacy computers. There are different categories depending on the maximum number of characters per line allowed. Simple, isn't it? I decided to go for a try, and made a MSX-1 program which I submitted to the contest. You can find a detailed description of the program in <A HREF="https://humbertomb.blogspot.com/2021/02/archer10-submission-to-2021-10-liner.html">Archer 10 (MSX). Submission to the 2021 10-Liner Contest</A>. After I finished, I asked myself: why not an Apple II port? Although I developed some programs in the 80s for Apple II, those were mostly CP/M with the Microsoft BASIC. You can find an example in <A HREF="https://humbertomb.blogspot.com/2020/10/recuperacion-de-codigo-mbasic-para.html">Recuperación de código MBASIC para Apple II desde listados</A> (it is in Spanish, but you can get the idea from the many pictures. Google translate might also be of some help). Anyway, it is never late for learning. And I had the appropriate material for getting into the job:
 
 <UL>
   <LI>D. Finningan (2012) <B>The New Apple II User's Guide</B>. Mac GUI, Lincoln, IL (book)</LI>
@@ -14,7 +14,8 @@ The first thing I learned is that double high resolution graphics is not availab
 I started to code right from the beginning thinking on a 10 lines program, with the experience of the MSX version. But because there were less graphical possibilities, I tried to enter the PUR-120 category. No way.  I had to reduce even more the visual aspects, and I wanted to support a minimum of them. Thus I ended up in the EXTREME-256 category. In addition to only ten lines of code, each line must not contain more than 256 characters. Overall, the code can not be larger than 2.5 Kb !!! To squeeze the code in this size you play the very old tricks. The BASIC interpreter uses a lexical analyzer that is based on keyword detection and not in delimiters. This basically means that you can write the code without white spaces. Who cares about readability !!! Then you use one-letter variables and single-digit line numbers (after all, remember, you can not use more than 10 :-). 
 
 This was standard stuff in 10-liners. When you have to actually code the gameplay, all of a sudden, you get the headaches. First thing is AppleSoft BASIC does not have ELSE statements. The typical strategy is to leave conditionals at the end of lines, and use ELSEs to better manage decisions (in term of program space and lines usage). Soooo ... you have to decompose decisions and break them apart into different lines. Tricky, isn't it? Let's see.
-The code
+
+<B>The code</B>
 
 Lines 0 to 3 initialize the program and do all graphics background drawing and shapes definition. The order in which instructions are performed are related to the available line space. I tried different combinations. One interesting and important thing is that only line 3 is needed to replay, so you can GOTO 3 when the game is finished to start a new one.
 
@@ -36,9 +37,7 @@ The state of the game is coded using the following variables:
 <LI><B>B</B> (Integer): state variable representing whether the arrow is moving (B=1) or not (B=0)</LI>
 <LI><B>Q</B> (Integer): state variable representing whether the game is active (Q=0) or not (Q=1)</LI>
 </UL>  
-Ifinally had a code of 1.7 Kb, in 10 lines of BASIC, with standard ASCII character coding. Nice. Goal achieved. You can find the code, a simulator disk file (DSK) and some multimedia materials here:
-
-GitHub: https://github.com/humbertomb/myappleii/tree/main/archer10
+Ifinally had a code of 1.7 Kb, in 10 lines of BASIC, with standard ASCII character coding. Nice. Goal achieved. 
 
 <B>Instructions</B>
 
