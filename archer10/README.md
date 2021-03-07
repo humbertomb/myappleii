@@ -1,3 +1,4 @@
+<H1>ARCHER10</H1>
 Some weeks ago I had notice of a retro programming contest, yes through one of these wasap groups, the <A HREF="https://gkanold.wixsite.com/homeputerium/rules2021">10th Edition of BASIC 10 Liner Contest</A>. The main idea is that you develop a game in BASIC with no more than 10 lines of code for 8 bit legacy computers. There are different categories depending on the maximum number of characters per line allowed. Simple, isn't it? I decided to go for a try, and made a MSX-1 program which I submitted to the contest. You can find a detailed description of the program in <A HREF="https://humbertomb.blogspot.com/2021/02/archer10-submission-to-2021-10-liner.html">Archer 10 (MSX). Submission to the 2021 10-Liner Contest</A>. After I finished, I asked myself: why not an Apple II port? Although I developed some programs in the 80s for Apple II, those were mostly CP/M with the Microsoft BASIC. You can find an example in <A HREF="https://humbertomb.blogspot.com/2020/10/recuperacion-de-codigo-mbasic-para.html">Recuperación de código MBASIC para Apple II desde listados</A> (it is in Spanish, but you can get the idea from the many pictures. Google translate might also be of some help). Anyway, it is never late for learning. And I had the appropriate material for getting into the job:
 
 <UL>
@@ -39,7 +40,7 @@ The state of the game is coded using the following variables:
 </UL>  
 I finally had a code of 1.7 Kb, in 10 lines of BASIC, with standard ASCII character coding. Nice. Goal achieved. 
 
-<B>Instructions</B>
+<BR><B>Instructions</B>
 
 You are a top-notch archer in the "<I>Outdoor Archery World Series. Moving Target</I>". You throw an arrow by pressing the space bar, and cannot throw a new one until it either makes a hit or a fail. The target moves so you have to carefully synchronize the arrow throwing with the target movement. The target speed gets increasing with each hit. You get points for each hit depending of how close the arrow gets to the target center. You are allowed a maximum of 3 failures, in which case the competition finishes and you get your final score. To start a new game press the space bar.
  
